@@ -13,7 +13,7 @@ import io.cucumber.junit.*;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				
 		},
-				tags="@smoke",
+				//tags="@smoke",
 		
 		publish=true
 
