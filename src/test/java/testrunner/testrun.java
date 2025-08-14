@@ -9,7 +9,11 @@ import io.cucumber.junit.*;
 		features={".//features/login.feature"}, 
 		glue="stepDefinations",
 		
-		plugin= {"pretty", "html:reports/myreport.html"},
+		plugin= {"pretty", "html:reports/myreport.html",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				
+		},
+				tags="@smoke",
 		
 		publish=true
 
