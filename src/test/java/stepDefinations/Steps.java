@@ -8,14 +8,14 @@ import org.openqa.selenium.*;
 
 
 public class Steps {
-	WebDriver driver;
+	WebDriver driver = new ChromeDriver();
 	@Given("the user is on login page")
 	public void the_user_is_on_login_page() {
 	  driver = new ChromeDriver();
 	  driver.get("https://www.saucedemo.com/v1/");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  driver.manage().window().maximize();
-	  	}
+	  	} 
 
 	@When("the user enters email as {string} and password as {string}")
 	public void the_user_enters_valid_credentials_username_password(String user, String pwd) {
@@ -46,7 +46,6 @@ public class Steps {
 		Assert.assertEquals(status, true);
 		driver.close();
 	   
-	}
-
+	} 
 
 }

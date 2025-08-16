@@ -8,21 +8,21 @@ import org.openqa.selenium.*;
 
 
 public class Steps2 {
-	WebDriver driver;
-	@Given("the user is on login page")
+	 /*WebDriver driver;
+	 @Given("the user is on login page")
 	public void the_user_is_on_login_page() {
 	  driver = new ChromeDriver();
 	  driver.get("https://www.saucedemo.com/v1/");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  driver.manage().window().maximize();
-	  	}
+	  	} 
 
-	@When("the user enters valid credentials \\(username: {string} , password:{string})")
+ /@When("the user enters valid credentials \\(username: {string} , password:{string})")
 	public void the_user_enters_valid_credentials_username_password(String user, String pwd) {
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(user);
 		driver.findElement(By.xpath("//input[@id = 'password']")).sendKeys(pwd);
 		
-	}
+	} 
 
 	@When("the user clicks on Login button")
 	public void the_user_clicks_on_login_button() {
@@ -46,7 +46,7 @@ public class Steps2 {
 		Assert.assertEquals(status, true);
 		driver.close();
 	   
-	}
+	} */
 
 
 }
