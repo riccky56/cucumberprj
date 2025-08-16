@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 
 
-public class Steps {
+public class Steps2 {
 	WebDriver driver;
 	@Given("the user is on login page")
 	public void the_user_is_on_login_page() {
@@ -17,7 +17,7 @@ public class Steps {
 	  driver.manage().window().maximize();
 	  	}
 
-	@When("the user enters email as {string} and password as {string}")
+	@When("the user enters valid credentials \\(username: {string} , password:{string})")
 	public void the_user_enters_valid_credentials_username_password(String user, String pwd) {
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(user);
 		driver.findElement(By.xpath("//input[@id = 'password']")).sendKeys(pwd);
