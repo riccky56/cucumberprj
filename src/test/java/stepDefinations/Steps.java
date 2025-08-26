@@ -18,9 +18,9 @@ public class Steps {
 	  	} 
 
 	@When("the user enters email as {string} and password as {string}")
-	public void the_user_enters_valid_credentials_username_password(String user, String pwd) {
+	public void the_user_enters_valid_credentials_username_password(String user, String pswd) {
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(user);
-		driver.findElement(By.xpath("//input[@id = 'password']")).sendKeys(pwd);
+		driver.findElement(By.xpath("//input[@id = 'password']")).sendKeys(pswd);
 		
 	}
 
