@@ -20,6 +20,7 @@ import io.cucumber.junit.*;
 
 		
 		)
+// Class declaration that groups the related example logic in one place.
 public class testrun {
 
 }
